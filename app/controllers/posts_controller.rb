@@ -4,7 +4,7 @@ class PostsController < ApplicationController
     end
     
     def create
-      @post = Post.new(post_params)
+      @post = Post.new(title: params[:title],content: params[:content])
       @post.save
       flash[:notice]="作成しました"
       redirect_to("posts/index")
