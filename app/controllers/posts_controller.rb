@@ -7,7 +7,7 @@ class PostsController < ApplicationController
       @post = Post.new(title: params[:title],content: params[:content])
       @post.save
       flash[:notice]="作成しました"
-      redirect_to("posts/index")
+      redirect_to("/")
     end
 
     def index
