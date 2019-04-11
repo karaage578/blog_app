@@ -17,8 +17,8 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'mini_racer', platforms: :ruby
 
 # Markdown
-gem 'redcarpet', '~> 2.3.0'
-gem 'coderay'
+gem 'qiita-markdown'
+gem 'rouge'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
